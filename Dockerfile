@@ -5,7 +5,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ENV EUREKA_SERVER_HOME /usr/local/eurekaserver
 RUN mkdir -p $EUREKA_SERVER_HOME
 WORKDIR $EUREKA_SERVER_HOME
-ADD ./target/eurekaserver-0.1.jar eurekaserver.jar
+ADD target/eurekaserver-0.1.jar eurekaserver.jar
 
 EXPOSE 10000
 ENTRYPOINT ["java", "-jar", "eurekaserver.jar"]
