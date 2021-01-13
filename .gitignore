@@ -1,4 +1,6 @@
 
 target/eurekaserver-1.0.jar.original
+target/maven-status
 target/maven-archiver
+target/classes
 .idea
