@@ -8,6 +8,6 @@ WORKDIR $EUREKA_SERVER_HOME
 ADD target/eurekaserver-1.0.jar eurekaserver.jar
 
 EXPOSE 10000
-ENTRYPOINT ["java -jar eurekaserver.jar", "--spring.profiles.active="]
+ENTRYPOINT ["java", "-jar", "eurekaserver.jar"]
 CMD ["profile"]
 
