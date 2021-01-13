@@ -8,6 +8,8 @@ server:
 eureka:
   client:
     region: sz
+    register-with-eureka: false
+    fetch-registry: false
 ---
 spring:
   profiles: sz-zone1-1
