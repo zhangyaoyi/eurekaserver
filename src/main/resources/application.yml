@@ -9,9 +9,9 @@ eureka:
   client:
     region: sz
     service-url:
-      sz-zone1: http://sz-zone1-1:10000/eureka
-      sz-zone2: http://sz-zone2-1:10000/eureka
-      sz-zone3: http://sz-zone3-1:10000/eureka
+      sz-zone1: http://d-sz-zone1-1:10000/eureka
+      sz-zone2: http://d-sz-zone2-1:10000/eureka
+      sz-zone3: http://d-sz-zone3-1:10000/eureka
 ---
 spring:
   profiles: sz-zone1-1
