@@ -8,8 +8,6 @@ server:
 eureka:
   client:
     region: sz
-    register-with-eureka: false
-    fetch-registry: false
     service-url:
       sz-zone1: http://sz-zone1-1:10000/eureka
       sz-zone2: http://sz-zone2-1:10000/eureka
@@ -19,7 +17,7 @@ spring:
   profiles: sz-zone1-1
 eureka:
   instance:
-    hostname: sz-zone1-1
+    hostname: sz-zone1-node1
   client:
     availability-zones:
       sz: sz-zone1,sz-zone2,sz-zone3
@@ -28,7 +26,7 @@ spring:
   profiles: sz-zone2-1
 eureka:
   instance:
-    hostname: sz-zone2-1
+    hostname: sz-zone2-node1
   client:
     availability-zones:
       sz: sz-zone2,sz-zone1,sz-zone3
@@ -37,7 +35,7 @@ spring:
   profiles: sz-zone3-1
 eureka:
   instance:
-    hostname: sz-zone3-1
+    hostname: sz-zone3-node1
   client:
     availability-zones:
       sz: sz-zone3,sz-zone1,sz-zone2
